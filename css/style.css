@@ -1,53 +1,130 @@
 body {
-	background-color: transparent;
+	background-color: #F2CD97;
+}
+h1 {
+	color: hsla(240,70%,30%,1);
+}
+
+.breadcrumb { 
+	list-style: none; 
+	overflow: hidden; 
+	font: 18px Helvetica, Arial, Sans-Serif;
+}
+.breadcrumb li { 
+	float: left; 
+}
+.breadcrumb li a {
+	color: white;
+	text-decoration: none; 
+	padding: 10px 50px 10px 50px;
+	background: brown;                   /* fallback color */
+	background: hsla(240,70%,30%,1); 
+	position: relative; 
+	display: inline-block;
+}
+
+.breadcrumb li a:after { 
+	content: " "; 
+	display: block; 
+	width: 0; 
+	height: 0;
+	border-top: 50px solid transparent;           
+	border-bottom: 50px solid transparent;
+	border-left: 30px solid hsla(240,70%,30%,1);
+	position: absolute;
+	top: 50%;
+	margin-top: -50px; 
+	left: 100%;
+	z-index: 2; 
+}
+
+.breadcrumb li a:before { 
+	content: " "; 
+	display: block; 
+	width: 0; 
+	height: 0;
+	border-top: 50px solid transparent;       
+	border-bottom: 50px solid transparent;
+	border-left: 30px solid white;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px; 
+	margin-left: 1px;
+	left: 100%;
+	z-index: 1; 
+}
+
+.breadcrumb li a:hover { 
+	background-color: #fff; 
+	color: hsla(240,70%,30%,1);
+	font-weight: 900;
+	border: 1px hsla(240,70%,30%,1) solid;
+}
+.breadcrumb li a:hover:after { border-left-color: hsla(240,70%,30%,1) !important; }
+
+.calendar {
+	background-color: #000;
+	color: #fff;	
+	width: 7.5rem;
+	text-align: center;
+	float: right;
+	margin-right: 25em;
 }
 
 .grocery-app{
-	background-color: #fff;
-	border: #000 2px solid;
+	background-image: url('../images/vintage.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: F2CD97;
+	border: #000 4px solid;
 	width: 30em;
 	height: 30em;
-	margin-left: 25rem;
-	margin-top: 1.5rem;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	margin-left: 20rem;
+	margin-top: 2rem;
 }
 
 .box {
 	width: 2.25em;
 	height: 1.625em;
-	background: blue;
-	padding-left: 1em;
-	padding-top: .5rem;
-	margin: -1.3rem 0 1.5rem 20rem;
-
+	background: transparent;
+	display: block;
+	margin-left: 20rem;
+	margin-top: -1.1rem;
 }
 
-h2 {
+.app-heading {
 	text-align: center;
-	background-color: blue;
-	color: #fff;
+	background-color: transparent;
+	border-top: 1px white solid;
+	border-bottom: 1px white solid;
+	color: hsla(240,70%,30%,1);
 	margin-left: -2.5rem;
 }
 
 li {
 	list-style-type: none;
 	display: inline;
+	color: #000;
+	margin-top: auto;
 }
 
-nav {
-	float: right;
-	margin-right: 5rem;
-	padding-left: 1rem;
-	color: #000;
-	clear: both;
-	background-color: #fff;
-	width: 15rem;
-	text-align: justify;
-}
 
 button {
 	width: 25rem;
 	height: 3rem;
 	margin-left: 2.5rem;
-	background-color: blue;
-	color: #fff;
+	margin-top: 12rem;
+	background-color: #fff;
+	color: #000;
+}
+
+@media (max-width: 1000px) {
+	.grocery-app {
+		margin-left: 1%;
+	}
+	.breadcrumb {
+		display: none;
+	}
 }
