@@ -123,8 +123,8 @@ button {
 @media (max-width: 1000px) {
 	.grocery-app {
 		margin-left: 1%;
-		width: 150%;
-		height: 150%;
+		width: 480px;
+		height: 480px;
 	}
 	.breadcrumb {
 		display: none;
