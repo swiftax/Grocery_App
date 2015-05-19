@@ -3,31 +3,30 @@
 <head>
 	<title>GroceryApp</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/app.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
 </head>
 <h1>Make a Grocery List</h1>
-<nav>
-
-	<ul class="breadcrumb">
-		<li><a href="#gifts">Gifts</a></li>
-		<li><a href="#goods">Goods</a></li>
+	<nav class="breadcrumb">
+		<li><a href="pages/gifts.html">Gifts</a></li>
+		<li><a href="pages/goods.html">Goods</a></li>
 		<li><a href="#groceries">Groceries</a> </li>
 
-	</ul>
-</nav>
+	</nav>
 <body>
 <div class="grocery-app">
-<ul>
 	<h2 class="app-heading">Grocery List</h2>
-		<li>Milk</li><div class="box"><input type="checkbox" name="checkbox"></div> 
-		<li>Ground Beef</li><div class="box"> <input type="checkbox" name="checkbox"></div>
-		<li>Sugar</li><div class="box"><input type="checkbox" name="checkbox"></div>  
-		<li>Ketchup</li><div class="box"><input type="checkbox" name="checkbox"></div>  
-		<li>Sweet Potato Fries</li><div class="box"><input type="checkbox" name="checkbox"></div> 
-		<li>Steak</li><div class="box"><input type="checkbox" name="checkbox"></div> 
+		<input type="text" placeholder="add new item" class="add-item">
+		<button class="add-button">Add Item</button>
+		<div id="error">Please add an item.</div>
+		<div id="list"></div>
+<ul>
+<h3>Items Purchased</h3>
+	<li class="completed">Ground Beef</li>
+	<h3>Items that need to be purchased</h3>
+	<li class="items"><button class="purchased">Purchased</button>Milk</li>
 </ul>
-<button>+ Add New Items</button>	
-</div>
-
-
+</div>	
 </body>
 </html>
