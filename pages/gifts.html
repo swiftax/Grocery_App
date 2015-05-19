@@ -3,31 +3,30 @@
 <head>
 	<title>GroceryApp</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="js/app.js"></script>
+	<script src="js/jquery-2.1.4.min.js"></script>
+
 </head>
 <h1>Make a Grocery List</h1>
-<nav>
-
-	<ul class="breadcrumb">
+	<nav class="breadcrumb">
 		<li><a href="gifts.html">Gifts</a></li>
 		<li><a href="goods.html">Goods</a></li>
 		<li><a href="../index.html">Groceries</a> </li>
 
-	</ul>
-</nav>
+	</nav>
 <body>
 <div class="grocery-app">
+	<h2 class="app-heading">Gift List</h2>
+		<input type="text" placeholder="add new item" class="add-item">
+		<button class="add-button">Add Item</button>
+		<div id="error">Please add an item.</div>
+		<div id="list"></div>
 <ul>
-	<h2 class="app-heading">Gift Shopping List</h2>
-		<li>Birthday Gift</li><div class="box"><input type="checkbox" name="checkbox"></div> 
-		<li>Wedding Gift</li><div class="box"> <input type="checkbox" name="checkbox"></div>
-		<li>Anniversary Gift</li><div class="box"><input type="checkbox" name="checkbox"></div>  
-		<li>Mother's Day Gift</li><div class="box"><input type="checkbox" name="checkbox"></div>  
-		<li>Father's Day Gift</li><div class="box"><input type="checkbox" name="checkbox"></div> 
-		<li>Graduation Gift</li><div class="box"><input type="checkbox" name="checkbox"></div> 
+<h3>Items Purchased</h3>
+	<li class="completed">Birthday Card</li>
+	<h3>Items that need to be purchased</h3>
+	<li class="items"><button class="purchased">Purchased</button>Anniversary Card</li>
 </ul>
-<button>+ Add New Items</button>	
-</div>
-
-
+</div>	
 </body>
 </html>
