@@ -50,7 +50,7 @@ h2 {
 }
 .nav li a {
 	color: white;
-	background-color: hsla(0, 100%, 28%, 1);
+  background-color:  hsla(0, 100%, 28%, 1);
 	text-decoration: none; 
 	padding: 10px 48px 10px 52px;
 	position: relative; 
@@ -148,6 +148,7 @@ a.show{
 
 #itemDescription {
 	width: 360px;
+  margin-left: -1rem;
 }
 
 #newItemForm input[type='submit'] {
@@ -183,12 +184,17 @@ input[type='submit'], a.add, button, a.show {
   color: #f3dad1;
   border-radius: 8px;
   border: none;
-  padding: 10px 10px;
+  padding: -25px 10px;
   font-family: 'Oswald', 'Futura', sans-serif;
   font-size: 18px;
   text-decoration: none;
-  margin-top: -0.5rem;
+  margin-top: 0.5rem;
   text-transform: uppercase;
+}
+
+#addButton {
+  width: 4rem;
+  height: 2rem;
 }
 
 input[type='submit'], a.add, button {
