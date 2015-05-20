@@ -3,30 +3,31 @@
 <head>
 	<title>GroceryApp</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="js/app.js"></script>
-	<script src="js/jquery-2.1.4.min.js"></script>
-
 </head>
-<h1>Make a Grocery List</h1>
-	<nav class="breadcrumb">
-		<li><a href="pages/gifts.html">Gifts</a></li>
-		<li><a href="pages/goods.html">Goods</a></li>
-		<li><a href="#groceries">Groceries</a> </li>
 
-	</nav>
 <body>
-<div class="grocery-app">
-	<h2 class="app-heading">Grocery List</h2>
-		<input type="text" placeholder="add new item" class="add-item">
-		<button class="add-button">Add Item</button>
-		<div id="error">Please add an item.</div>
-		<div id="list"></div>
-<ul>
-<h3>Items Purchased</h3>
-	<li class="completed">Ground Beef</li>
-	<h3>Items that need to be purchased</h3>
-	<li class="items"><button class="purchased">Purchased</button>Milk</li>
-</ul>
+<div id="page">
+<h1>Make a Grocery List</h1>
+	<div class="items">
+	<h1 id="header"></h1>
+	<h2>Grocery List</h2>
+	<ul>
+		<li id="one" class="high">Milk</li>
+		<li id="two" class="high">Cheese</li>
+		<li id="three" class="high">Steak</li>
+		<li id="four" class="medium">Cereal</li>
+		<li id="five" class="low">Ground Beef</li>		
+	</ul>
+	</div>
+	<div class="add-section">
+	<div id="newItemButton"><button href="#" id="showForm">New Item</button></div>
+	<form id="newItemForm"></form>
+	<input type="text" id="itemDescription" placeholder="Add description.." />
+	<input type="submit" id="addButton" value="add" />
+	</form>
 </div>	
+</div>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
